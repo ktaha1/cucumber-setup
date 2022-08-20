@@ -15,8 +15,8 @@ public class StepDefinitions {
         this.lucy = new Person();
     }
 
-    @Given ("Lucy is located {int} metres from Sean")
-    public void lucy_is_located_metres_from_sean(Integer distance) {
+    @Given ("{person} is located {int} metre(s) from Sean")
+    public void lucy_is_located_metres_from_sean(Person person, Integer distance) {
         lucy.moveTo(distance);
     }
     @When("Sean shouts {string}")

@@ -5,6 +5,6 @@ Feature: Hear shout
     Then Lucy hears Sean's message
 
   Scenario: Listener is out of range
-    Given Lucy is located 10 metres from Sean
+    Given Lucy is located 1 metre from Sean
     When Sean shouts "Come and get a taste!"
     Then Lucy hears Sean's message

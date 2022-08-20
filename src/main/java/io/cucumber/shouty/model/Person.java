@@ -17,9 +17,15 @@ public class Person {
     private List<String> messagesHeard;
     private int distance;
     private final int range=20;
+
+    private String name;
     public void moveTo(Integer distance) {
         this.distance=distance;
 
+    }
+
+    public Person(String name){
+        this.name = name;
     }
 
     public void shout(String message) {
